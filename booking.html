@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Table - The Spice Bistro</title>
+</head>
+<body>
+
+  <header>
+    <h1>The Spice Bistro</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="story.html">About Us</a> |
+      <a href="booking.html">Book a Table</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <h2>Table Reservation Form</h2>
+    <p>Fill out the form below to reserve your table in advance.</p>
+
+    <form action="#" method="post">
+
+      <p>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </p>
+
+      <p>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+      </p>
+
+      <p>
+        <label for="guests">Number of Guests:</label><br>
+        <select id="guests" name="guests">
+          <option value="1">1 Person</option>
+          <option value="2" selected>2 Persons</option>
+          <option value="3">3 Persons</option>
+          <option value="4">4 Persons</option>
+          <option value="5">5 Persons</option>
+          <option value="6">6+ Persons</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="date">Date of Reservation:</label><br>
+        <input type="date" id="date" name="date" required>
+      </p>
+
+      <p>
+        <label for="time">Time Slot:</label><br>
+        <input type="time" id="time" name="time" required>
+      </p>
+
+      <p>
+        Seating Preference:<br>
+        <input type="radio" id="indoor" name="seating" value="indoor" checked>
+        <label for="indoor">Indoor (AC)</label>
+        <input type="radio" id="outdoor" name="seating" value="outdoor">
+        <label for="outdoor">Rooftop / Outdoor</label>
+      </p>
+
+      <p>
+        <label for="requests">Special Requests / Food Allergies:</label><br>
+        <textarea id="requests" name="requests" rows="4" cols="40" placeholder="e.g., Anniversary decoration, extra high chair..."></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Confirm Reservation</button>
+        <button type="reset">Clear Form</button>
+      </p>
+
+    </form>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 The Spice Bistro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
